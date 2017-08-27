@@ -51,7 +51,7 @@ bot.on("message", msg => {
         let artist = args.slice(1).join(" ")
         if (!args[0]) { return msg.channel.send(":x: Sorry, but you must specify an arist to get the image of.") }
         dz.findArtists(artist).then(function(result) {
-            msg.channel.send("", { embed: new Discord.RichEmbed().setTitle(result.data[0].name).setColor("#00D4FF").setThumbnail("http://a2.mzstatic.com/us/r30/Purple4/v4/73/f2/77/73f277e5-37fa-e7e5-5195-43d664aadba8/mzl.xhtrnmrg.png").setImage(result.data[0].picture_medium).setFooter("Information sourced from Deezer") })
+            msg.channel.send("", { embed: new Discord.RichEmbed().setTitle(result.data[0].name).setColor("#00D4FF").setImage(result.data[0].picture_medium).setFooter("Information sourced from Deezer") })
         });
     };
 
