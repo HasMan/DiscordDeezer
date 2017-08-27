@@ -2,7 +2,7 @@
 A Discord bot that works with the Deezer API.
 
 
-Dependencies:
+**Dependencies**:
 
 -Node.js
 
@@ -10,10 +10,10 @@ Dependencies:
 
 -Deezer-Node-API
 
-Installation:
+**Installation**:
 
 O.o
 
 
-Made by ohlookitsderpy#3799
+Made by **ohlookitsderpy#3799**
 
