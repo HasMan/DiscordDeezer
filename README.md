@@ -8,7 +8,7 @@ Dependencies:
 -Deezer-Node-API
 
 Installation:
-¯\_(ツ)_/¯
+O.o
 
 
 Made by ohlookitsderpy#3799
