@@ -81,7 +81,7 @@ bot.on("message", msg => {
     }
 
     if (cmd == "help") {
-        msg.channel.send("", { embed: new Discord.RichEmbed().setTitle("Help").setColor("ff0000").setDescription("__***Commands***__\n__**Info**__\n**de$help** - Shows this message\n**de$stats** - Tells you bot stats\n**de$support** - Links you to the support server\n__**Deezer**__\n**de$song (name)** - Finds info about a song on Deezer\n**de$artist (name)** - Finds info about an artist on Deezer\n**de$preview (song name)** - Gives you a 30 second preview link of a song\n**de$image (artist name)** - Gives you an image of an artist\n**de$stats** - Tells you bot stats\n**de$support** - Links you to the support server").setFooter("Help Command") })
+        msg.channel.send("", { embed: new Discord.RichEmbed().setTitle("Help").setColor("ff0000").setThumbnail("http://a2.mzstatic.com/us/r30/Purple4/v4/73/f2/77/73f277e5-37fa-e7e5-5195-43d664aadba8/mzl.xhtrnmrg.png").setDescription("__***Commands***__\n__**Info**__\n**de$help** - Shows this message\n**de$stats** - Tells you bot stats\n**de$support** - Links you to the support server\n__**Deezer**__\n**de$song (name)** - Finds info about a song on Deezer\n**de$artist (name)** - Finds info about an artist on Deezer\n**de$preview (song name)** - Gives you a 30 second preview link of a song\n**de$image (artist name)** - Gives you an image of an artist\n**de$stats** - Tells you bot stats\n**de$support** - Links you to the support server").setFooter("Help Command") })
     }
 
 });
