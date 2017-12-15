@@ -39,7 +39,6 @@ bot.on("message", msg => {
             msg.channel.send("", { embed: new Discord.RichEmbed().setTitle(result.data[0].title).setColor("#00D4FF").setThumbnail("http://a2.mzstatic.com/us/r30/Purple4/v4/73/f2/77/73f277e5-37fa-e7e5-5195-43d664aadba8/mzl.xhtrnmrg.png").setDescription("**Preview**\n" + result.data[0].preview).setFooter("Information sourced from Deezer") })
         });
     };
-
     if (cmd == "image") {
         let artist = args.slice(1).join(" ")
         if (!args[0]) { return msg.channel.send(":x: Sorry, but you must specify an arist to get the image of.") }
@@ -66,7 +65,7 @@ bot.on("message", msg => {
 });
 
 bot.on('guildCreate', (guild) => {
-    guild.defaultChannel.sendEmbed(
+    guild.defaultChannel.send(
         new Discord.RichEmbed()
         .setColor("#34495e")
         .setDescription("Hello there! I am a bot that works with the Deezer API to give you information. Do " + config.prefix + "help for my commands!")
