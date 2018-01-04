@@ -64,13 +64,4 @@ bot.on("message", msg => {
     }
 });
 
-bot.on('guildCreate', (guild) => {
-    guild.defaultChannel.send(
-        new Discord.RichEmbed()
-        .setColor("#34495e")
-        .setDescription("Hello there! I am a bot that works with the Deezer API to give you information. Do " + config.prefix + "help for my commands!")
-        .setAuthor("Hello!")
-    )
-});
-
 bot.login(config.token)
