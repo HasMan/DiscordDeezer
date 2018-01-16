@@ -3,7 +3,6 @@ var Deezer = require('deezer-node-api');
 var dz = new Deezer();
 const bot = new Discord.Client()
 const config = require('./config.json');
-const prefix = config.prefix
 
 bot.on("ready", () => {
     console.log("Ready!");
@@ -12,7 +11,7 @@ bot.on("ready", () => {
 
 bot.on("message", msg => {
     if (!msg.guild) { return }
-    if (!msg.content.startsWith(prefix)) { return; }
+    if (!msg.content.startsWith(config.prefix)) { return; }
     let cmd = msg.content.split(" ")[0]
     cmd = cmd.slice(prefixes[msg.guild.id].length)
     let args = msg.content.split(" ").slice(1)
